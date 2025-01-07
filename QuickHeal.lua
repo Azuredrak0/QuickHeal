@@ -1906,7 +1906,7 @@ local function CastCheckSpell()
     local _, class = UnitClass('player');
     class = string.lower(class);
     if class == "druid" then
-        CastSpell(QuickHeal_GetSpellInfo(QUICKHEAL_SPELL_HEALING_TOUCH)[1].SpellID, BOOKTYPE_SPELL);
+        CastSpell(QuickHeal_GetSpellInfo(QUICKHEAL_SPELL_REGROWTH)[1].SpellID, BOOKTYPE_SPELL);
     elseif class == "paladin" then
         CastSpell(QuickHeal_GetSpellInfo(QUICKHEAL_SPELL_HOLY_LIGHT)[1].SpellID, BOOKTYPE_SPELL);
     elseif class == "priest" then
