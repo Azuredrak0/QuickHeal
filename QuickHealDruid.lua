@@ -183,7 +183,7 @@ function QuickHeal_Druid_FindHealSpellToUse(Target, healType, multiplier, forceM
         K=0.8;
     end
 
-    if not TargetIsHealthy or maxRankRG<1 then
+    if TargetIsHealthy or maxRankRG<1 then
         -- target is healthy so use the closest available mana efficient healing
         debug(string.format("target healthy or no Regrowth available, will use Healing Touch"))
         if Health < RatioFull then
