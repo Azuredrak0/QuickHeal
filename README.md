@@ -17,6 +17,19 @@ QuickHeal uses the incoming heal information broadcast by HealComm, through the 
 
 ## Usage
 
+This version includes functions that allow automation for Paladin Melee Healing
+/run qhCastHolyStrike(93,3);  -- Smart Holy Stike function, 1st number is the min %healing threshold to trigger, the 2nd number is the # of targets needed under threshold (DEFAULT set at 93% threshold on 3 targets)
+/run qhHealWithHolyShock(85); -- Smart Holy Shock function, number is the min % healing threshold to trigger (DEFAULT is set to 85%)
+
+If Roid Macros is installed, an intelligent melee macro can be built with following commands
+/run qhHStrike(90,3)
+/run qhHShock(85)
+/cast [nocooldown:Crusader_Strike cooldown:Holy_Shock]Crusader Strike
+/cast [nomybuff:Seal_of_Wisdom]Seal of Wisdom
+/cast [nocooldown:Judgement nomybuff:Holy_Judgement]Judgement
+/qh
+/startattack
+
 **Help**
 `/qh help` displays help inside the console
 
