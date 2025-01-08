@@ -31,6 +31,7 @@ If Roid Macros is installed, an intelligent melee macro can be built with follow
 /qh
 /startattack
 ```
+Repository for Roid Macros can be found here - https://github.com/MarcelineVQ/Roid-Macros.git
 
 **Help**
 `/qh help` displays help inside the console
