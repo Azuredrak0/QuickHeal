@@ -22,13 +22,15 @@ This version includes functions that allow automation for Paladin Melee Healing
 - /run qhHealWithHolyShock(85); -- Smart Holy Shock function, number is the min % healing threshold to trigger (DEFAULT is set to 85%)
 
 If Roid Macros is installed, an intelligent melee macro can be built with following commands
-```/run qhHStrike(90,3)
+```
+/run qhHStrike(90,3)
 /run qhHShock(85)
 /cast [nocooldown:Crusader_Strike cooldown:Holy_Shock]Crusader Strike
 /cast [nomybuff:Seal_of_Wisdom]Seal of Wisdom
 /cast [nocooldown:Judgement nomybuff:Holy_Judgement]Judgement
 /qh
-/startattack```
+/startattack
+```
 
 **Help**
 `/qh help` displays help inside the console
